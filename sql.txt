@@ -1,0 +1,16 @@
+create table blocked (
+ip varchar(20),
+start TIMESTAMP,
+duration varchar(10),
+count int,
+comment varchar(200),
+primary key (ip, start, duration)
+);
+
+create table log (
+ip  varchar(20),
+time TIMESTAMP,
+request varchar(200),
+status int,
+primary key(ip, time)
+);

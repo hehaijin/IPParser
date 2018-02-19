@@ -1,0 +1,1 @@
+The program reads from a log file of access records, loads record into a database, and do some query on records. 
