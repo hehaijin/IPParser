@@ -1,0 +1,12 @@
+(1) 
+
+ select ip 
+ from (select * from log where time > '2017-01-01 13:00:00' and            time < '2017-01-01 14:00:00') as T
+ group by ip
+ having count(ip) > 100
+
+
+
+(2) select * from log where ip='yourip'
+for example
+select ip, request from log where ip='192.168.169.194'
