@@ -8,9 +8,11 @@ primary key (ip, start, duration)
 );
 
 create table log (
+id int NOT NULL AUTO_INCREMENT,
 ip  varchar(20),
 time TIMESTAMP,
 request varchar(200),
 status int,
-primary key(ip, time)
+agent varchar(200),
+primary key(id)
 );
